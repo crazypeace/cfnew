@@ -1,3 +1,8 @@
+# 本项目的修改
+去掉原项目的视觉特效
+
+以下为 原项目 README
+
 # CFnew - 终端 v2.2
 
 <div align="center" style="margin-bottom: 20px;">
