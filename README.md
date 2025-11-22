@@ -1,6 +1,9 @@
 # 本项目的修改
 去掉原项目的视觉特效
 
+开发故事  
+https://zelikk.blogspot.com/2025/11/cfnew.html
+
 以下为 原项目 README
 
 # CFnew - 终端 v2.2
