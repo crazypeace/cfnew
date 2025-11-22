@@ -954,46 +954,45 @@
         <script>
             function createMatrixRain() {
                 return;
+                //const matrixContainer = document.getElementById('matrixCodeRain');
+                //const matrixChars = '01ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+                //const columns = Math.floor(window.innerWidth / 18);
                 
-                const matrixContainer = document.getElementById('matrixCodeRain');
-                const matrixChars = '01ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-                const columns = Math.floor(window.innerWidth / 18);
-                
-                for (let i = 0; i < columns; i++) {
-                    const column = document.createElement('div');
-                    column.className = 'matrix-column';
-                    column.style.left = (i * 18) + 'px';
-                    column.style.animationDelay = Math.random() * 15 + 's';
-                    column.style.animationDuration = (Math.random() * 15 + 8) + 's';
-                    column.style.fontSize = (Math.random() * 4 + 12) + 'px';
-                    column.style.opacity = Math.random() * 0.8 + 0.2;
+                //for (let i = 0; i < columns; i++) {
+                //    const column = document.createElement('div');
+                //    column.className = 'matrix-column';
+                //    column.style.left = (i * 18) + 'px';
+                //    column.style.animationDelay = Math.random() * 15 + 's';
+                //    column.style.animationDuration = (Math.random() * 15 + 8) + 's';
+                //    column.style.fontSize = (Math.random() * 4 + 12) + 'px';
+                //    column.style.opacity = Math.random() * 0.8 + 0.2;
                     
-                    let text = '';
-                    const charCount = Math.floor(Math.random() * 30 + 20);
-                    for (let j = 0; j < charCount; j++) {
-                        const char = matrixChars[Math.floor(Math.random() * matrixChars.length)];
-                        const brightness = Math.random() > 0.1 ? '#00ff00' : '#00aa00';
-                        text += '<span style="color: ' + brightness + ';">' + char + '</span><br>';
-                    }
-                    column.innerHTML = text;
-                    matrixContainer.appendChild(column);
-                }
+                //    let text = '';
+                //    const charCount = Math.floor(Math.random() * 30 + 20);
+                //    for (let j = 0; j < charCount; j++) {
+                //        const char = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+                //        const brightness = Math.random() > 0.1 ? '#00ff00' : '#00aa00';
+                //        text += '<span style="color: ' + brightness + ';">' + char + '</span><br>';
+                //    }
+                //    column.innerHTML = text;
+                //    matrixContainer.appendChild(column);
+                //}
                 
-                setInterval(function() {
-                    const columns = matrixContainer.querySelectorAll('.matrix-column');
-                    columns.forEach(function(column) {
-                        if (Math.random() > 0.95) {
-                            const chars = column.querySelectorAll('span');
-                            if (chars.length > 0) {
-                                const randomChar = chars[Math.floor(Math.random() * chars.length)];
-                                randomChar.style.color = '#ffffff';
-                                setTimeout(function() {
-                                    randomChar.style.color = '#00ff00';
-                                }, 200);
-                            }
-                        }
-                    });
-                }, 100);
+                //setInterval(function() {
+                //    const columns = matrixContainer.querySelectorAll('.matrix-column');
+                //    columns.forEach(function(column) {
+                //        if (Math.random() > 0.95) {
+                //            const chars = column.querySelectorAll('span');
+                //            if (chars.length > 0) {
+                //                const randomChar = chars[Math.floor(Math.random() * chars.length)];
+                //                randomChar.style.color = '#ffffff';
+                //                setTimeout(function() {
+                //                    randomChar.style.color = '#00ff00';
+                //                }, 200);
+                //            }
+                //        }
+                //    });
+                //}, 100);
             }
             
             function isValidUUID(uuid) {
@@ -2816,45 +2815,45 @@
             
             function createMatrixRain() {
                 return;
-                const matrixContainer = document.getElementById('matrixCodeRain');
-                const matrixChars = '01ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-                const columns = Math.floor(window.innerWidth / 18);
+                //const matrixContainer = document.getElementById('matrixCodeRain');
+                //const matrixChars = '01ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+                //const columns = Math.floor(window.innerWidth / 18);
                 
-                for (let i = 0; i < columns; i++) {
-                    const column = document.createElement('div');
-                    column.className = 'matrix-column';
-                    column.style.left = (i * 18) + 'px';
-                    column.style.animationDelay = Math.random() * 15 + 's';
-                    column.style.animationDuration = (Math.random() * 15 + 8) + 's';
-                    column.style.fontSize = (Math.random() * 4 + 12) + 'px';
-                    column.style.opacity = Math.random() * 0.8 + 0.2;
+                //for (let i = 0; i < columns; i++) {
+                //    const column = document.createElement('div');
+                //    column.className = 'matrix-column';
+                //    column.style.left = (i * 18) + 'px';
+                //    column.style.animationDelay = Math.random() * 15 + 's';
+                //    column.style.animationDuration = (Math.random() * 15 + 8) + 's';
+                //    column.style.fontSize = (Math.random() * 4 + 12) + 'px';
+                //    column.style.opacity = Math.random() * 0.8 + 0.2;
                     
-                    let text = '';
-                    const charCount = Math.floor(Math.random() * 30 + 20);
-                    for (let j = 0; j < charCount; j++) {
-                        const char = matrixChars[Math.floor(Math.random() * matrixChars.length)];
-                        const brightness = Math.random() > 0.1 ? '#00ff00' : '#00aa00';
-                        text += '<span style="color: ' + brightness + ';">' + char + '</span><br>';
-                    }
-                    column.innerHTML = text;
-                    matrixContainer.appendChild(column);
-                }
+                //    let text = '';
+                //    const charCount = Math.floor(Math.random() * 30 + 20);
+                //    for (let j = 0; j < charCount; j++) {
+                //        const char = matrixChars[Math.floor(Math.random() * matrixChars.length)];
+                //        const brightness = Math.random() > 0.1 ? '#00ff00' : '#00aa00';
+                //        text += '<span style="color: ' + brightness + ';">' + char + '</span><br>';
+                //    }
+                //    column.innerHTML = text;
+                //    matrixContainer.appendChild(column);
+                //}
                 
-                setInterval(function() {
-                    const columns = matrixContainer.querySelectorAll('.matrix-column');
-                    columns.forEach(function(column) {
-                        if (Math.random() > 0.95) {
-                            const chars = column.querySelectorAll('span');
-                            if (chars.length > 0) {
-                                const randomChar = chars[Math.floor(Math.random() * chars.length)];
-                                randomChar.style.color = '#ffffff';
-                                setTimeout(function() {
-                                    randomChar.style.color = '#00ff00';
-                                }, 200);
-                            }
-                        }
-                    });
-                }, 100);
+                //setInterval(function() {
+                //    const columns = matrixContainer.querySelectorAll('.matrix-column');
+                //    columns.forEach(function(column) {
+                //        if (Math.random() > 0.95) {
+                //            const chars = column.querySelectorAll('span');
+                //            if (chars.length > 0) {
+                //                const randomChar = chars[Math.floor(Math.random() * chars.length)];
+                //                randomChar.style.color = '#ffffff';
+                //                setTimeout(function() {
+                //                    randomChar.style.color = '#00ff00';
+                //                }, 200);
+                //            }
+                //        }
+                //    });
+                //}, 100);
             }
             
             async function checkSystemStatus() {
