@@ -1,0 +1,40 @@
+name: 修改 明文源吗 去掉视频特效
+
+on:
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  modify-file:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 修改 明文源吗
+        run: |
+          # 1. 替换 animation: 为 //animation:
+          sed -i 's/animation:/\/\/animation:/g' 明文源吗
+          
+          # 2. 在 function createMatrixRain() { 下一行添加 return;
+          sed -i '/function createMatrixRain() {/a\    return;' 明文源吗
+      
+      - name: Check if file changed
+        id: check_changes
+        run: |
+          if git diff --quiet 明文源吗; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add 明文源吗
+          git commit -m "去掉视频特效"
+          git push
