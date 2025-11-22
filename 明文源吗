@@ -785,7 +785,7 @@
                 position: fixed; top: 0; left: 0; width: 100%; height: 100%;
                 background: linear-gradient(45deg, #000 0%, #001100 50%, #000 100%);
                 z-index: -1;
-                animation: bg-pulse 8s ease-in-out infinite;
+                //animation: bg-pulse 8s ease-in-out infinite;
             }
             @keyframes bg-pulse {
                 0%, 100% { background: linear-gradient(45deg, #000 0%, #001100 50%, #000 100%); }
@@ -794,7 +794,7 @@
             .matrix-rain {
                 position: fixed; top: 0; left: 0; width: 100%; height: 100%;
                 background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,0,0.03) 2px, rgba(0,255,0,0.03) 4px);
-                animation: matrix-fall 20s linear infinite;
+                //animation: matrix-fall 20s linear infinite;
                 z-index: -1;
             }
             @keyframes matrix-fall {
@@ -810,7 +810,7 @@
                 position: absolute; top: -100%; left: 0;
                 color: #00ff00; font-family: "Courier New", monospace;
                 font-size: 14px; line-height: 1.2;
-                animation: matrix-drop 15s linear infinite;
+                //animation: matrix-drop 15s linear infinite;
                 text-shadow: 0 0 5px #00ff00;
             }
             @keyframes matrix-drop {
@@ -820,16 +820,16 @@
                 100% { top: 100vh; opacity: 0; }
             }
             .matrix-column:nth-child(odd) {
-                animation-duration: 12s;
-                animation-delay: -2s;
+                //animation-duration: 12s;
+                //animation-delay: -2s;
             }
             .matrix-column:nth-child(even) {
-                animation-duration: 18s;
-                animation-delay: -5s;
+                //animation-duration: 18s;
+                //animation-delay: -5s;
             }
             .matrix-column:nth-child(3n) {
-                animation-duration: 20s;
-                animation-delay: -8s;
+                //animation-duration: 20s;
+                //animation-delay: -8s;
             }
             .terminal {
                 width: 90%; max-width: 800px; height: 500px;
@@ -883,7 +883,7 @@
             }
             .terminal-cursor {
                 display: inline-block; width: 8px; height: 16px;
-                background: #00ff00; animation: blink 1s infinite;
+                background: #00ff00; //animation: blink 1s infinite;
                 margin-left: 2px;
             }
             @keyframes blink {
@@ -903,7 +903,7 @@
                 position: fixed; top: 20px; right: 20px;
                 color: #00ff00; font-family: "Courier New", monospace;
                 font-size: 0.8rem; opacity: 0.6;
-                animation: matrix-flicker 3s infinite;
+                //animation: matrix-flicker 3s infinite;
             }
             @keyframes matrix-flicker {
                 0%, 100% { opacity: 0.6; }
@@ -953,6 +953,8 @@
         </div>
         <script>
             function createMatrixRain() {
+                return;
+                
                 const matrixContainer = document.getElementById('matrixCodeRain');
                 const matrixChars = '01ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
                 const columns = Math.floor(window.innerWidth / 18);
@@ -2134,7 +2136,7 @@
                 position: fixed; top: 0; left: 0; width: 100%; height: 100%;
                 background: linear-gradient(45deg, #000 0%, #001100 50%, #000 100%);
                 z-index: -1;
-                animation: bg-pulse 8s ease-in-out infinite;
+                //animation: bg-pulse 8s ease-in-out infinite;
             }
             @keyframes bg-pulse {
                 0%, 100% { background: linear-gradient(45deg, #000 0%, #001100 50%, #000 100%); }
@@ -2143,7 +2145,7 @@
             .matrix-rain {
                 position: fixed; top: 0; left: 0; width: 100%; height: 100%;
                 background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,0,0.03) 2px, rgba(0,255,0,0.03) 4px);
-                animation: matrix-fall 20s linear infinite;
+                //animation: matrix-fall 20s linear infinite;
                 z-index: -1;
             }
             @keyframes matrix-fall {
@@ -2159,7 +2161,7 @@
                 position: absolute; top: -100%; left: 0;
                 color: #00ff00; font-family: "Courier New", monospace;
                 font-size: 14px; line-height: 1.2;
-                animation: matrix-drop 15s linear infinite;
+                //animation: matrix-drop 15s linear infinite;
                 text-shadow: 0 0 5px #00ff00;
             }
             @keyframes matrix-drop {
@@ -2186,7 +2188,7 @@
                 font-size: 3.5rem; font-weight: bold;
                 text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
                 margin-bottom: 10px;
-                animation: matrix-glow 1.5s ease-in-out infinite alternate, matrix-pulse 3s ease-in-out infinite;
+                //animation: matrix-glow 1.5s ease-in-out infinite alternate, matrix-pulse 3s ease-in-out infinite;
                 position: relative;
                 background: linear-gradient(45deg, #00ff00, #00aa00, #00ff00);
                 background-size: 200% 200%;
@@ -2210,7 +2212,7 @@
                 box-shadow: 0 0 30px rgba(0, 255, 0, 0.5), inset 0 0 20px rgba(0, 255, 0, 0.1);
                 position: relative;
                 backdrop-filter: blur(10px);
-                animation: card-glow 4s ease-in-out infinite;
+                //animation: card-glow 4s ease-in-out infinite;
                 box-sizing: border-box;
                 width: 100%;
                 max-width: 100%;
@@ -2224,7 +2226,7 @@
                 width: 100%; height: 100%;
                 background: linear-gradient(45deg, transparent 49%, #00ff00 50%, transparent 51%);
                 opacity: 0.2; pointer-events: none;
-                animation: scan-line 3s linear infinite;
+                //animation: scan-line 3s linear infinite;
             }
             @keyframes scan-line {
                 0% { transform: translateX(-100%); }
@@ -2301,7 +2303,7 @@
                 color: #00ff00; margin-top: 20px; display: none;
                 box-shadow: inset 0 0 15px rgba(0, 255, 0, 0.4), 0 0 20px rgba(0, 255, 0, 0.3);
                 border-radius: 5px;
-                animation: url-glow 2s ease-in-out infinite alternate;
+                //animation: url-glow 2s ease-in-out infinite alternate;
                 position: relative;
                 overflow-wrap: break-word;
                 overflow-x: auto;
@@ -2316,7 +2318,7 @@
                 content: ""; position: absolute; top: 0; left: -100%;
                 width: 100%; height: 100%;
                 background: linear-gradient(90deg, transparent, rgba(0,255,0,0.1), transparent);
-                animation: url-scan 3s linear infinite;
+                //animation: url-scan 3s linear infinite;
             }
             @keyframes url-scan {
                 0% { left: -100%; }
@@ -2326,7 +2328,7 @@
                 position: fixed; top: 20px; right: 20px;
                 color: #00ff00; font-family: "Courier New", monospace;
                 font-size: 0.8rem; opacity: 0.6;
-                animation: matrix-flicker 3s infinite;
+                //animation: matrix-flicker 3s infinite;
             }
             @keyframes matrix-flicker {
                 0%, 100% { opacity: 0.6; }
@@ -2813,6 +2815,7 @@
             }
             
             function createMatrixRain() {
+                return;
                 const matrixContainer = document.getElementById('matrixCodeRain');
                 const matrixChars = '01ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
                 const columns = Math.floor(window.innerWidth / 18);
