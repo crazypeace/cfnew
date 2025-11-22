@@ -1,12 +1,9 @@
 name: Deploy Worker Script
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - '**'  # 仅匹配分支推送，排除标签推送
-    paths:
-      - '少年你相信光吗'
+    tags:
+      - '*'  # 当任何标签被推送时触发
 
 jobs:
   deploy-worker:
