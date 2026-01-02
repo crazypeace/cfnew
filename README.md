@@ -4,6 +4,13 @@
 开发故事  
 https://zelikk.blogspot.com/2025/11/cfnew.html
 
+#面向GPT开发
+摊贩
+```
+分析上传的文件, 这是一个用于cloudflare worker环境的js脚本
+请分析出显示HTTP页面中的视觉特效部分, 位于代码的什么位置.
+```
+
 以下为 原项目 README
 
 # CFnew - 终端 v2.2
